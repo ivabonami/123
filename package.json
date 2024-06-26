@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "axios": "^1.7.2",
+    "sass": "^1.77.6"
+  }
+}
