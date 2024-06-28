@@ -10,9 +10,16 @@ $black: #000000;
     margin: 0;
     padding: 0;
 }
+a {
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    background-color: $white
+    background-color: $white;
+    padding-bottom: 30px;
 }
 
 .row {
@@ -29,4 +36,45 @@ h2 {
     font-style: normal;
     font-weight: 600;
     line-height: 40px; /* 100% */
+}
+
+h3 {
+    color: var(--black, #000);
+    font-family: "IBM Plex Sans";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 142.857% */
+}
+
+input {
+    border-radius: 10px;
+    background: var(--gray, #EFF3F6);
+    color: black;
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 13px;
+    border: none;
+
+    &::placeholder {
+        color: #787878;
+    }
+
+}
+
+select {
+    border-radius: 10px;
+    background: var(--gray, #EFF3F6);
+    color: black;
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 13px;
+    border: none;
+
 }

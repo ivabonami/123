@@ -62,7 +62,7 @@ export default {
               href: 'features'
             },{
               name: 'Вакансии',
-              href: 'vacancy'
+              href: 'vacancies'
             },{
               name: 'Компания',
               href: 'company'
