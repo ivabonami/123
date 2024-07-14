@@ -37,4 +37,10 @@ export default {
 
 
 }
+
+@media screen and (max-width: 768px){
+  input {
+    width: 10%;
+  }
+}
 </style>

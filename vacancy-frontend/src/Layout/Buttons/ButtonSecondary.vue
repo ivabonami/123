@@ -54,4 +54,15 @@ export default {
         }
       }
     }
+
+    @media screen and (max-width: 768px){
+      .button {
+        color: var(--red, #B20931);
+        font-family: "IBM Plex Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
 </style>

@@ -16,6 +16,10 @@ a {
 html {
     scroll-behavior: smooth;
 }
+.job-link {
+    color: #B20931;
+    text-decoration: underline;
+}
 
 body {
     background-color: $white;
@@ -25,6 +29,36 @@ body {
 .row {
     width: 1004px;
     margin: 0 auto;
+}
+
+.nav {
+    margin-left: auto;
+
+    .navigation {
+        display: flex;
+        padding-left: 0;
+        list-style: none;
+        gap: 10px;
+
+        li {
+            border-bottom: 1px solid transparent;
+            transition: .15s ease;
+
+            a {
+                color: var(--black, #000);
+                font-family: "IBM Plex Sans";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-decoration: none;
+
+            }
+            &:hover {
+                border-bottom-color: rgba(0, 0, 0, 0.30);
+            }
+        }
+    }
 }
 
 h2 {
@@ -47,6 +81,24 @@ h3 {
     line-height: 40px; /* 142.857% */
 }
 
+h4 {
+    color: var(--black, #000);
+    font-family: "IBM Plex Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 142.857% */
+}
+
+label {
+    color: var(--black, #000);
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
 input {
     border-radius: 10px;
     background: var(--gray, #EFF3F6);
@@ -58,6 +110,28 @@ input {
     line-height: normal;
     padding: 8px 13px;
     border: none;
+
+    &::placeholder {
+        color: #787878;
+    }
+
+}
+
+textarea {
+    border-radius: 10px;
+    background: var(--gray, #EFF3F6);
+    color: black;
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 8px 13px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    resize: none;
 
     &::placeholder {
         color: #787878;
@@ -77,4 +151,42 @@ select {
     padding: 8px 13px;
     border: none;
 
+}
+.interactiveSvg {
+    cursor: pointer;
+
+    &:hover {
+        path {
+            stroke: #b20931;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .row {
+        width: 100%;
+        overflow: hidden;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        color: var(--black, #000);
+        font-family: "IBM Plex Sans";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px; /* 100% */
+    }
+    h3 {
+        color: var(--black, #000);
+        font-family: "IBM Plex Sans";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px; /* 181.818% */
+    }
+    input {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }

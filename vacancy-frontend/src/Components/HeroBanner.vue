@@ -4,7 +4,7 @@
       <div class="text">
         <h2>
           Хотите зарабатывать <br />
-          <span>до 100.000 ₽</span>
+          <span>до 100.000 ₽</span> <br />
           рядом с домом?
         </h2>
 
@@ -109,6 +109,40 @@ export default {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+}
+@media screen and (max-width: 768px){
+  h2 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .hero-banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .text {
+      width: 58%;
+
+      .advanced-info {
+        font-size: 10px;
+      }
+    }
+
+    .hero-banner_image {
+      position: absolute;
+      right: -100px;
+      top: 0;
+      bottom: 0;
+      img {
+        height: 100%;
+      }
+    }
+
+    .buttons {
+      flex-wrap: wrap;
+      gap: 0px;
+    }
   }
 }
 </style>

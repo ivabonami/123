@@ -46,6 +46,7 @@ import BaseLogotype from '../Layout/BaseLogotype.vue'
 import buttonPrimary from "@/Layout/Buttons/ButtonPrimary.vue";
 
 import {settings} from "@/Stores/settings.js";
+import {menuItems} from "@/Stores/menu.js";
 
 export default {
   components: {
@@ -56,22 +57,8 @@ export default {
     
     data() {
         return {
-          menuItems: [
-            {
-              name: 'Преимущества',
-              href: 'features'
-            },{
-              name: 'Вакансии',
-              href: 'vacancies'
-            },{
-              name: 'Компания',
-              href: 'company'
-            },{
-              name: 'Вопросы',
-              href: 'faq'
-            },
-          ],
 
+          menuItems,
           settings
             
         }
@@ -107,33 +94,14 @@ export default {
       text-decoration: none;
 
     }
-    .nav {
-      margin-left: auto;
 
-      .navigation {
-        display: flex;
-        padding-left: 0;
-        list-style: none;
-        gap: 10px;
-
-        li {
-          border-bottom: 1px solid transparent;
-          transition: .15s ease;
-
-          a {
-            color: var(--black, #000);
-            font-family: "IBM Plex Sans";
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            text-decoration: none;
-
-          }
-          &:hover {
-            border-bottom-color: rgba(0, 0, 0, 0.30);
-          }
-        }
+    @media screen and (max-width: 768px) {
+      .nav {
+        display: none;
+      }
+      .phone {
+        display: none;
       }
     }
+
 </style>

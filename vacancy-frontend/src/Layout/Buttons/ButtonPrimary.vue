@@ -60,4 +60,15 @@ export default {
       }
 
     }
+
+    @media screen and (max-width: 768px){
+      .button {
+
+        &.long {
+          font-size: 14px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
 </style>
