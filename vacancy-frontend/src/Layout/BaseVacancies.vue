@@ -92,6 +92,10 @@ export default {
 <style lang="scss" scoped>
 .delete {
   color: #b20931;
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  font-style: normal;
+  width: 55px;
 }
 .vacancy {
   padding-top: 40px;

@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="profession-info" v-if="data">
-      <h2>{{ data.name }}</h2>
+      <h2>{{ data.name }}, от {{ data.price }} ₽</h2>
 
       <div class="profession">
         <div class="whatToDo">
